@@ -1,0 +1,119 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body {
+    background-image: url("ups.jpg");
+	width: 100%;
+	color: #0E2E63;
+	font-family: openSans, open-sans, sans-serif;
+}
+
+.top img{
+	height: 90px;
+	width: 20%;
+	margin: 30px;
+	
+}
+	
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 255px;
+	margin: 10px 20px 15px 40px;
+}
+
+.ate {
+    height: 70px;
+	width: 20%;
+	font-size:25;
+	margin: 30px;
+}
+
+.up {
+	text-align: center;
+	display: inline;
+	margin-top: 10px;
+}
+
+.up1 {
+	font-size: 70px;
+	margin-top: 10px;
+}
+
+.up2 {
+	font-size: 80px;
+	margin-top: 10px;
+}
+
+.main {
+	display: row;
+	background-color:white;
+	border: none;
+	margin: 25px;
+	box-shadow: 10px 7px 7px 9px lightgrey;
+	border-radius: 10px;
+	height: 1000px;
+	padding:35px;
+}
+
+.main input {
+	display: row;
+	height: 100px;
+	width: 100%;
+	padding-left: 30px;
+	font-size: 35px;
+	margin: 10px;
+	
+}
+
+.main button {
+	background-color: #0E2E63;
+	color: white;
+	margin: 10px;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	height: 100px;
+	font-size: 30px;
+}
+
+.main p{
+	padding-bottom: 25px;
+	font-size: 70px;
+	margin: 35px;
+}
+
+.out {
+	margin: 25px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.tap {
+	color: black;
+	margin: 40px 20px 40px 20px;
+	font-size: 40px;
+}
+
+.reg {
+	font-size: 8px;
+	border: 2px solid lightblue !important;
+	color: #0E2E63 !important;
+	background-color: white !important;
+	margin: 25px;
+	width: 100%;
+	padding: 10px;
+}
+
+.copy {
+	color: black;
+	margin: 40px;
+	font-size: 25px;
+	padding-top: 75px;
+	height: 0px;
+}
