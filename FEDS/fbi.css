@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: sans-serif,Arial,Helvetica;
+
+}
+
+.headerup img {
+	object-fit: contain;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	background-color: #111;
+	color: white;
+	
+}
+
+.headerup {
+	display: flex;
+
+}
+
+.sele select{
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	color: #BBBBBB;
+	background: #111;
+	border: none;
+}
+
+.headertop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header1 {
+	background-color: black;
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	height: 35px;
+}
+
+.headerdown {
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+
+.headerdown img {
+	object-fit: contain;
+	height: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.men p{
+	cursor: pointer;
+	padding: 5px;
+}
+
+.men {
+	display: flex;
+	margin: 0px 60px;
+
+}
+
+.menu {
+	border: 0.1px solid #BBBBBB;
+	height: 30px;
+	cursor: pointer;
+}
+
+.mainph {
+	
+
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	color: #36619B;
+	width: 100%;
+	border-bottom: 0.1px solid #111;
+}
+
+.mainhead h2 {
+	padding: 10px;
+	font-size: 40px;
+}
