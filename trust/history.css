@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #004156;
+}
+
+.pm {
+    padding: 5px;
+}
+
+
+
+
+.upp {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    color: white;
+    background-color: #004156;
+}
+
+.bacc{
+    width: 20%;
+}
+
+.bacc img{
+    height: 65%;
+    padding: 15px  0px 0px 15px;
+}
+
+.titl {
+    font-size: 17px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+   padding-top: 10px;
+
+}
+
+
+.upp .menu {
+    display: none;
+}
+
+.upp ul li:hover{
+    background-color: #005f7d;
+
+}
+
+.upp ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+    padding:20px;
+    
+    
+}
+
+.upp ul li{
+    
+    padding-bottom: 15px;
+}
+
+.upp ul{
+    list-style: none;
+    overflow: hidden;
+    color: white;
+    background-color: #000000;
+    padding:0;
+    margin: 0;
+
+}
+
+.upp .nvar {
+    clear: both;
+    max-height: 0;
+    transition:max-height .2s ease-out
+}
+
+.upp .menu:checked ~ .nvar {
+    max-height: 640px;
+    
+}
+
+.upp .check {
+    padding: 28px 20px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.upp .check .nav{
+    background: white;
+    display: block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.upp .check .nav:before{
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all .2s ease-out;
+}
+
+.upp .check .nav::after{
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .2s ease-out;
+}
+
+.upp .menu:checked ~ .check .nav{
+    background: transparent;
+}
+
+.upp .menu:checked ~ .check .nav:before{
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.upp .menu:checked ~ .check .nav:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.main {
+    margin-top: 55px;
+    height: 115vh;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mhead {
+    border: 1px solid black;
+    width: 95%;
+    height: fit-content;
+    margin-top: 25px;
+    color: rgb(44, 78, 134);
+    background-color: rgb(240, 248, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.oppd {
+    border: 1px solid #005f7d;
+    width: 95%;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.main table{
+    color: white;
+}

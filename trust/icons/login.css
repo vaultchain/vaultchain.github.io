@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main img {
+    box-sizing: content-box;
+    height: 200px;
+    padding-right: 10px;
+    width: 200px;
+    border: 5px;
+}
+
+.main button {
+    margin-top: 5px;
+    padding: 2px;
+    width: 90px;
+    margin-left: 35px;
+    color: blue;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.main form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    margin: 5px;
+}
+
+.main {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #005f7d;
+    height: 500px;
+    padding-top: 100px;
+}
+
+.main input {
+    margin-bottom: 10px;
+}
+
+.main label {
+    color: grey;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+.lab {
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+    margin-bottom: 5px;
+}
+
+.bottom {
+    margin-top:35px;
+    width: 100%;
+}
+
+.bottom img{
+    height: 70px;
+}
+
+.last {
+    background-color: #005f7d;
+    margin-top: 35px;
+    height: 150px;
+    width: 100%;
+}

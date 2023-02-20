@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src=".\img/logo.png">
+        </div>
+        <div class="main">
+            <?php
+            include("connfile.php");
+            session_start();
+            
+            if ($SERVER['REQUEST_METHOD']=='POST'){
+                $v1=$_POST['Username'];
+                $v2=$_POST['Password'];
+
+                $sqlvar="SELECT * FROM admintab WHERE userID='$v1' and pWord='$v2'";
+	            $result=$conn ->query($sqlvar);
+	            if($result-> num_rows >0)
+                {
+		            $_SESSION['day'] = date('d/m/y h:i:s A');
+		            header("location: adminmain.php");
+	            }
+	            else
+	            {
+		            echo"INCORRECT CRIDENCIALS";
+	            }
+            }
+
+            
+            ?>
+            <form action="" method="post">
+                <label class="lab" for="">LOGIN</label>
+                <label for="Username">Username</label>
+                <input type="text" id="Username" name="userID">
+                <label for="Password">Password</label>
+                <input type="text" id="Password" name="pWord">
+                <button type="submit">Submit</button>
+            </form>
+            <img src=".\img/foto.png">
+        </div>
+        <div class="bottom">
+            <img src=".\img/key.jpg" alt="">
+        </div>
+        <div class="last">
+            <img src="" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
